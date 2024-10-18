@@ -1,19 +1,25 @@
-"use client"
-
+"use client";
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { color } from "framer-motion";
+import { title, subtitle } from "@/components/primitives";
 
 export default function App() {
   return (
-    <Accordion>
-      <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-        hello
-      </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-        how are you
-      </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-        hava chetore
-      </AccordionItem>
-    </Accordion>
+    <section>
+      <header className="flex justify-center items-center text-6xl flex-col">
+        <h1 className="font-semibold flex items-center">
+          Let Your Web application to
+          <span
+            className={title({ color: "pink", className: "font-extrabold" })}
+            style={{ fontSize: "5rem" }}
+          >
+            Hakha
+          </span>
+        </h1>
+        <div className={subtitle({ class: "mt-4" })}>
+          Beautiful, fast and modern React UI library.
+        </div>
+      </header>
+    </section>
   );
 }
