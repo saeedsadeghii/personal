@@ -13,6 +13,9 @@ module.exports = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },
+      backgroundImage: {
+        'saeed-pattern': "url('@/assets/saeedPics/Picsart_24-10-19_00-03-48-982.png')",
+      },
     },
   },
   darkMode: "class",
