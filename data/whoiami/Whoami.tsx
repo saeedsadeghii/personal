@@ -2,16 +2,17 @@
 import { Card } from "@nextui-org/react";
 import Image from "next/image";
 import React from "react";
-import Saeed from "@/assets/saeedPics/Picsart_24-10-19_00-09-05-903.png";
+import whoAmI_Saeed from "@/assets/saeedPics/Picsart_24-10-19_00-09-05-903.png";
 const Whoami = () => {
   return (
     <div className="flex">
-      <div className="flex-1">
-        <Card isPressable >
-          <Image src={Saeed} width={300} alt="saeed" />
+      <div className="">
+        <Card isPressable>
+          
+          <Image src={whoAmI_Saeed} alt="Description" width={500} height={300} />
         </Card>
       </div>
-      <div className="flex-2">
+      <div className="">
         <Card>
           <h2>Who am I?</h2>
           <p>
