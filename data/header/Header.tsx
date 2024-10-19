@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <header className="h-[90vh] bg-saeed-pattern bg-bottom bg-contain bg-no-repeat border">
       <div className="flex justify-start items-center flex-col gap-y-5 h-full">
-        <h1 className="font-semibold items-center text-4xl">
+        <h1 className="font-semibold items-center text-7xl">
           Let Your Web Application To
           <span
             className={title({ color: "pink" })}
