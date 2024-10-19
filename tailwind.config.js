@@ -13,6 +13,14 @@ module.exports = {
         sans: ["var(--font-sans)"],
         mono: ["var(--font-mono)"],
       },
+      flex: {
+        '2': '2 2 0%',
+        '3': '3 3 0%',
+        '4': '4 4 0%',
+        '5': '5 5 0%',
+        '6': '6 6 0%',
+        '7': '7 7 0%',
+      },
       backgroundImage: {
         'saeed-pattern': "url('@/assets/saeedPics/Picsart_24-10-19_00-03-48-982.png')",
       },
