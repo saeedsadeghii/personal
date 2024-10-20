@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  @font-face {
+
+  /* @font-face {
     font-family: 'Rubik Regular';
     src: url('/fonts/Rubik/static/Rubik-Regular.ttf') format('ttf');
     font-weight: 400;
@@ -33,5 +33,4 @@
     src: url('/public/fonts/dacing_script/static/DancingScript-Bold.ttf') format('ttf');
     font-weight: 900;
     font-style: bold;
-  }
-}
+  } */
