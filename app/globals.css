@@ -1,13 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@font-face {
+
+@layer base{
+  @font-face {
     font-family: 'Rubik Regular';
     src: url('/fonts/Rubik/static/Rubik-Regular.ttf') format('ttf');
     font-weight: 400;
     font-style: normal;
   }
-  
   @font-face {
     font-family: 'Rubik bold';
     src: url('/fonts/Rubik/static/Rubik-Bold.ttf') format('ttf');
@@ -27,3 +28,10 @@
     font-weight: 400;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Dancing Script';
+    src: url('/public/fonts/dacing_script/static/DancingScript-Bold.ttf') format('ttf');
+    font-weight: 900;
+    font-style: bold;
+  }
+}
