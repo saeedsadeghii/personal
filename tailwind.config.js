@@ -9,10 +9,10 @@ module.exports = {
   ],
   theme: {
     extend: {
-      fontFamily: {
-        sans: ["var(--font-sans)"],
-        mono: ["var(--font-mono)"],
-      },
+      rubik: ['Rubik Regular', 'sans-serif'], // Rubik Regular
+      rubikBold: ['Rubik bold', 'sans-serif'], // Rubik Bold
+      rubikBlack: ['Rubik black', 'sans-serif'], // Rubik Black
+      rethink: ['Rethink Sans', 'sans-serif'], // Rethink Sans
       flex: {
         '2': '2 2 0%',
         '3': '3 3 0%',

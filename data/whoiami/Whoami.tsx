@@ -5,14 +5,13 @@ import React from "react";
 import whoAmI_Saeed from "@/assets/saeedPics/Picsart_24-10-19_00-09-05-903.png";
 const Whoami = () => {
   return (
-    <div className="grid grid-cols-3">
-      <div className="col-span-1">
+    <div className="flex items-center content-stretch gap-4">
+      <div className="">
         <Card isPressable>
-          
           <Image src={whoAmI_Saeed} alt="Description" width={500} height={300} />
         </Card>
       </div>
-      <div className="col-span-2">
+      <div className="">
         <Card>
           <h2>Who am I?</h2>
           <p>
