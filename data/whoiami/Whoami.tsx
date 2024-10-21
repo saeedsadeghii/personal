@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import whoAmI_Saeed from "@/assets/saeedPics/Picsart_24-10-19_00-09-05-903.png";
 import { title } from "@/components/primitives";
+import { whoAmITexts } from "@/config/site";
 const Whoami = () => {
   return (
     <div>
@@ -21,26 +22,21 @@ const Whoami = () => {
         </div>
         <div className="col-span-2">
           <Card className="p-7 h-full">
-            <h2 className={title({color:"foreground"})}>Hi Dears this is saeed</h2>
-            <p>
-              From the very beginning, the world of computers was more than just
-              an interest for me—it was like the language of zeros and ones was
-              something I could use to express anything. That's why I decided to
-              dive into this field and learn everything from the ground up. I
-              believe programming is the very language that shapes the world,
-              and with it, anything can be built.
-              <br/>As a computer science
-              student, I’ve spent over two years immersed in web development. My
-              goal has always been to break past limitations and master the
-              latest technologies in modern web development. My expertise lies
-              in advanced frameworks like Next.js and React, which enable me to
-              build efficient, cutting-edge web applications.
-              <br/>Throughout this
-              journey, I’ve started numerous projects from scratch, learning
-              something new with each challenge. Now, with all my passion and
-              experience, I’m ready to take on larger, more complex projects and
-              apply my skills to their fullest potential.
-            </p>
+            <div className="mb-7">
+              <h2 className={title({ color: "yellow",size:"lg" })}>
+                Hi Dears this is{" "}Saeed
+              </h2>
+            </div>
+            {whoAmITexts.map((text) => (
+              <div className="grid gap-5 font-thin text-lg">
+                <div className="grid gap-y-3 mb-5">
+                  <h3 className={title({ color: "foreground" , size:"sm"})}>
+                    {text.titile}
+                  </h3>
+                  <p>{text.text}</p>
+                </div>
+              </div>
+            ))}
           </Card>
         </div>
       </div>
