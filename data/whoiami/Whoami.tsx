@@ -9,18 +9,19 @@ const Whoami = () => {
   return (
     <div>
       <h1 className={` text-6xl text-center my-10`}>Who Am I</h1>
-      <div className="grid grid-cols-3 gap-10">
-        <div className="col-span-1">
-          <Card isPressable>
+      <div className="grid grid-cols-1 xl:grid-cols-3 gap-10">
+        <div className="col-span-1 hidden xl:block">
+          <Card isPressable className="h-full">
             <Image
               src={whoAmI_Saeed}
               alt="Description"
               width={500}
               height={300}
+              className="object-bottom object-contain h-full"
             />
           </Card>
         </div>
-        <div className="col-span-2">
+        <div className="col-span-1 xl:col-span-2">
           <Card className="p-7 h-full">
             <div className="mb-7">
               <h2 className={title({ color: "yellow",size:"lg" })}>
@@ -33,7 +34,7 @@ const Whoami = () => {
                   <h3 className={title({ color: "foreground" , size:"sm"})}>
                     {text.titile}
                   </h3>
-                  <p>{text.text}</p>
+                  <p className="leading-8 text-base xl:text-lg">{text.text}</p>
                 </div>
               </div>
             ))}
